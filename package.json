@@ -1,0 +1,20 @@
+{
+  "name": "poster-h5-builder",
+  "version": "1.0.0",
+  "description": "make a poster to a h5",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "keywords": [
+    "poster",
+    "h5",
+    "builder"
+  ],
+  "author": "jerry9926",
+  "license": "MIT",
+  "dependencies": {
+    "cpy": "8.1.2",
+    "ejs": "3.1.6"
+  }
+}

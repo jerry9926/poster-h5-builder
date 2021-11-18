@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title><%= title %></title>
+  <style type="text/css">
+  .top_back { position:fixed; top:0; bottom: 0; left: 0; right: 0;  background:#ffffff; height: 44px; line-height: 44px; font-size: 18px; color:#393a3f; text-align:center;  }
+  .top_back a.back_btn { position:absolute; top:0; left:0; height: 44px;}
+  .top_back img { width: 38px; line-height: 44px; }
+  .con {padding-top: 44px;}
+  .totop { display:block;  position:fixed; bottom: 40px; right: 10px; z-index:7;}
+  .totop img { width: 40px; height: 40px; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./<%= name %>/css/common.css"/>
+</head>
+<body>
+  <a name="top" id="top"></a>
+  <div class="top_back">
+    <a href="<%= backUrl %>" class="back_btn"><img src="./<%= name %>/images/arrow.png"/></a><%= title %>
+  </div>
+  <div class="con"><img src="./<%= name %>/images/<%= filename %>"/></div>
+  <a href="#top" class="totop"><img src="./<%= name %>/images/totop.png"/></a>
+</body>
+</html>
